@@ -1,0 +1,24 @@
+{
+  "base_model": "models/Qwen3-VL-8B-Thinking",
+  "layers": [
+    11,
+    23,
+    31
+  ],
+  "rank": 16,
+  "seed": 42,
+  "train_samples": 19344,
+  "val_samples": 2393,
+  "epochs": 2,
+  "batch_size": 2,
+  "accumulation": 8,
+  "lora_lr": 5e-05,
+  "module_lr": 0.0002,
+  "energy_weight": 0.001,
+  "train_data": "data/clean/train.jsonl",
+  "val_data": "data/clean/val.jsonl",
+  "test_data": "data/clean/test.jsonl",
+  "variant": "static",
+  "output_dir": "outputs/qwen3vl8b/static",
+  "diagnostic_samples": 128
+}
